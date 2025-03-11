@@ -136,7 +136,6 @@
             Name = "hiep_14_Frm1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "14_hiep Typing speed test";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

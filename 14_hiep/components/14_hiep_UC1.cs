@@ -26,46 +26,46 @@ namespace hiep_14.components
             "comet", "destiny", "emerald", "fountain", "galaxy", "harmony", "infinity", "jewel", "kingdom", "legend",
             "mystery", "nebula", "oasis", "paradise", "quantum", "radiance", "spectrum", "twilight", "utopia", "voyage"
             ];
-        Random rdn = new Random();
-        int sec = 59;
-        bool isStart = true;
-        double accuracy;
-        double wpm;
-        int word = 0;
-        int count = 0;
-        string key = "";
+        Random hiep_14_rdn = new Random();
+        int hiep_14_sec = 59;
+        bool hiep_14_isStart = true;
+        double hiep_14_accuracy;
+        double hiep_14_wpm;
+        int hiep_14_word = 0;
+        int hiep_14_count = 0;
+        string hiep_14_key = "";
 
         public _14_hiep_UC1()
         {
             InitializeComponent();
             hiep_14_timer1.Stop();
-            hiep_14_lb1.Text = hiep_14_list[rdn.Next(0, hiep_14_list.Length)];
+            hiep_14_lb1.Text = hiep_14_list[hiep_14_rdn.Next(0, hiep_14_list.Length)];
             hiep_14_time.Text = "1:00";
             hiep_14_lbRatio.Text = "";
         }
 
         private void hiep_14_btn1_check(object sender, KeyEventArgs e)
         {
-            //count all key press
-            count++;
+            //hiep_14_count all hiep_14_key press
+            hiep_14_count++;
             //time start here
-            if (isStart)
+            if (hiep_14_isStart)
             {
                 hiep_14_timer1.Start();
-                isStart = false;
+                hiep_14_isStart = false;
             }
             if (e.KeyCode == Keys.Space)
             {
                 if (hiep_14_txt1.Text.Trim() == hiep_14_lb1.Text)
                 {
-                    key += hiep_14_lb1.Text;
-                    word++;
-                    hiep_14_lb1.Text = hiep_14_list[rdn.Next(0, hiep_14_list.Length)];
+                    hiep_14_key += hiep_14_lb1.Text;
+                    hiep_14_word++;
+                    hiep_14_lb1.Text = hiep_14_list[hiep_14_rdn.Next(0, hiep_14_list.Length)];
                     hiep_14_txt1.Text = null;
                 }
                 else
                 {
-                    hiep_14_lb1.Text = hiep_14_list[rdn.Next(0, hiep_14_list.Length)];
+                    hiep_14_lb1.Text = hiep_14_list[hiep_14_rdn.Next(0, hiep_14_list.Length)];
                     hiep_14_txt1.Text = null;
                 }
             }
@@ -75,16 +75,16 @@ namespace hiep_14.components
         {
             hiep_14_txt1.Text = "";
             hiep_14_lbRatio.Text = "";
-            isStart = true;
+            hiep_14_isStart = true;
             hiep_14_time.Text = "1:00";
-            sec = 10;
+            hiep_14_sec = 10;
             hiep_14_txt1.Enabled = true;
             hiep_14_timer1.Stop();
-            word = 0;
-            count = 0;
-            key = "";
-            wpm = 0;
-            accuracy = 0;
+            hiep_14_word = 0;
+            hiep_14_count = 0;
+            hiep_14_key = "";
+            hiep_14_wpm = 0;
+            hiep_14_accuracy = 0;
         }
 
         private void hiep_14_btn2_Click(object sender, EventArgs e)
@@ -94,28 +94,18 @@ namespace hiep_14.components
 
         private void hiep_14_timer1_Tick(object sender, EventArgs e)
         {
-            if (sec < 0)
+            if (hiep_14_sec < 0)
             {
                 hiep_14_timer1.Stop();
                 hiep_14_txt1.Enabled = false;
-                wpm = (this.key.Length / 5);
-                accuracy = (this.key.Length) * 100 / (this.count - hiep_14_txt1.Text.Length - word);
-                hiep_14_lbRatio.Text = string.Format("WPM: {0:F1}\nAccuracy: {1:F2}%", this.wpm, this.accuracy);
+                hiep_14_wpm = (this.hiep_14_key.Length / 5);
+                hiep_14_accuracy = (this.hiep_14_key.Length) * 100 / (this.hiep_14_count - hiep_14_txt1.Text.Length - hiep_14_word);
+                hiep_14_lbRatio.Text = string.Format("WPM: {0:F1}\nAccuracy: {1:F2}%", this.hiep_14_wpm, this.hiep_14_accuracy);
             }
-            else if (sec < 10)
-                hiep_14_time.Text = "0:0" + sec--.ToString();
+            else if (hiep_14_sec < 10)
+                hiep_14_time.Text = "0:0" + hiep_14_sec--.ToString();
             else
-                hiep_14_time.Text = "0:" + sec--.ToString();
-        }
-
-        private void hiep_14_lb1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hiep_14_lbTitle_Click(object sender, EventArgs e)
-        {
-
+                hiep_14_time.Text = "0:" + hiep_14_sec--.ToString();
         }
     }
 }

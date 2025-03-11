@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Label hiep_14_lb2;
             hiep_14_time = new Label();
             hiep_14_lbRatio = new Label();
             hiep_14_lb1 = new Label();
@@ -37,6 +38,7 @@
             hiep_14_timer1 = new System.Windows.Forms.Timer(components);
             hiep_14_lbTitle = new Label();
             hiep_14_txt1 = new RichTextBox();
+            hiep_14_lb2 = new Label();
             SuspendLayout();
             // 
             // hiep_14_time
@@ -80,7 +82,7 @@
             // 
             hiep_14_btn2.BackColor = Color.Crimson;
             hiep_14_btn2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
-            hiep_14_btn2.Location = new Point(519, 597);
+            hiep_14_btn2.Location = new Point(519, 635);
             hiep_14_btn2.Name = "hiep_14_btn2";
             hiep_14_btn2.Size = new Size(121, 39);
             hiep_14_btn2.TabIndex = 12;
@@ -91,7 +93,7 @@
             // hiep_14_btn1
             // 
             hiep_14_btn1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
-            hiep_14_btn1.Location = new Point(519, 540);
+            hiep_14_btn1.Location = new Point(519, 578);
             hiep_14_btn1.Name = "hiep_14_btn1";
             hiep_14_btn1.Size = new Size(121, 41);
             hiep_14_btn1.TabIndex = 11;
@@ -130,6 +132,19 @@
             hiep_14_txt1.Text = "";
             hiep_14_txt1.KeyUp += hiep_14_btn1_check;
             // 
+            // hiep_14_lb2
+            // 
+            hiep_14_lb2.AutoSize = true;
+            hiep_14_lb2.BackColor = Color.Moccasin;
+            hiep_14_lb2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            hiep_14_lb2.ForeColor = Color.RoyalBlue;
+            hiep_14_lb2.Location = new Point(452, 529);
+            hiep_14_lb2.Name = "hiep_14_lb2";
+            hiep_14_lb2.Size = new Size(257, 28);
+            hiep_14_lb2.TabIndex = 19;
+            hiep_14_lb2.Text = "Enter to continue typing !";
+            hiep_14_lb2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // _14_hiep_UC2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -137,6 +152,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImage = Properties.Resources.Fire_Moth__B3_MU_0_;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(hiep_14_lb2);
             Controls.Add(hiep_14_txt1);
             Controls.Add(hiep_14_time);
             Controls.Add(hiep_14_lbRatio);

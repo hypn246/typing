@@ -22,10 +22,5 @@ namespace hiep_14
             _14_hiep_uC21.BringToFront();
             _14_hiep_uC21.Dock = DockStyle.Fill;
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

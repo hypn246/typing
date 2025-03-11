@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hiep_14_typing_speed")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f61a647ac2c4673298dae4a16a0f085b5d8f65f")]
 [assembly: System.Reflection.AssemblyProductAttribute("hiep_14_typing_speed")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hiep_14_typing_speed")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

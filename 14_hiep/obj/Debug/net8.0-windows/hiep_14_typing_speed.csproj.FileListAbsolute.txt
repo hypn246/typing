@@ -37,3 +37,4 @@ C:\Users\admin\Desktop\lab\GUI\Typing_GUI\14_hiep\obj\Debug\net8.0-windows\refin
 C:\Users\admin\Desktop\lab\GUI\Typing_GUI\14_hiep\obj\Debug\net8.0-windows\hiep_14_typing_speed.pdb
 C:\Users\admin\Desktop\lab\GUI\Typing_GUI\14_hiep\obj\Debug\net8.0-windows\hiep_14_typing_speed.genruntimeconfig.cache
 C:\Users\admin\Desktop\lab\GUI\Typing_GUI\14_hiep\obj\Debug\net8.0-windows\ref\hiep_14_typing_speed.dll
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\14_hiep\obj\Debug\net8.0-windows\hiep_14_typing_speed.sourcelink.json

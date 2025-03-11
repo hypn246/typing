@@ -16,20 +16,5 @@ namespace hiep_14_typing_speed.components
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void _14_hiep_UC_setting_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hiep_14_btn1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

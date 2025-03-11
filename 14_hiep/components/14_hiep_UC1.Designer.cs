@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Label hiep_14_lb2;
             hiep_14_txt1 = new TextBox();
             hiep_14_lb1 = new Label();
             hiep_14_btn2 = new Button();
@@ -37,7 +38,21 @@
             hiep_14_time = new Label();
             hiep_14_timer1 = new System.Windows.Forms.Timer(components);
             hiep_14_lbTitle = new Label();
+            hiep_14_lb2 = new Label();
             SuspendLayout();
+            // 
+            // hiep_14_lb2
+            // 
+            hiep_14_lb2.AutoSize = true;
+            hiep_14_lb2.BackColor = Color.RoyalBlue;
+            hiep_14_lb2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            hiep_14_lb2.ForeColor = Color.White;
+            hiep_14_lb2.Location = new Point(475, 391);
+            hiep_14_lb2.Name = "hiep_14_lb2";
+            hiep_14_lb2.Size = new Size(262, 28);
+            hiep_14_lb2.TabIndex = 11;
+            hiep_14_lb2.Text = "Space to continue typing !";
+            hiep_14_lb2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // hiep_14_txt1
             // 
@@ -61,7 +76,6 @@
             hiep_14_lb1.TabIndex = 6;
             hiep_14_lb1.Text = "!";
             hiep_14_lb1.TextAlign = ContentAlignment.MiddleCenter;
-            hiep_14_lb1.Click += hiep_14_lb1_Click;
             // 
             // hiep_14_btn2
             // 
@@ -130,7 +144,6 @@
             hiep_14_lbTitle.TabIndex = 10;
             hiep_14_lbTitle.Text = "LETHAL TEMPO MODE";
             hiep_14_lbTitle.TextAlign = ContentAlignment.MiddleCenter;
-            hiep_14_lbTitle.Click += hiep_14_lbTitle_Click;
             // 
             // _14_hiep_UC1
             // 
@@ -138,6 +151,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = hiep_14_typing_speed.Properties.Resources.ru9ums16vqm11;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(hiep_14_lb2);
             Controls.Add(hiep_14_lbTitle);
             Controls.Add(hiep_14_time);
             Controls.Add(hiep_14_lbRatio);
@@ -145,6 +159,7 @@
             Controls.Add(hiep_14_lb1);
             Controls.Add(hiep_14_btn2);
             Controls.Add(hiep_14_btn1);
+            Margin = new Padding(5);
             Name = "_14_hiep_UC1";
             Size = new Size(1200, 750);
             ResumeLayout(false);
@@ -161,5 +176,6 @@
         private Label hiep_14_time;
         private System.Windows.Forms.Timer hiep_14_timer1;
         private Label hiep_14_lbTitle;
+        private Label hiep_14_lb2;
     }
 }
