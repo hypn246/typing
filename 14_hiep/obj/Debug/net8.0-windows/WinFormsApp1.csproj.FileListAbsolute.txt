@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\admin\Desktop\lab\GUI\Typing_GUI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.components._14_hiep_UC1.resources
