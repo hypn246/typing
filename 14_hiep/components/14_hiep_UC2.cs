@@ -40,16 +40,16 @@ namespace hiep_14_typing_speed.components
             hiep_14_lbRatio.Text = "";
         }
 
-        private void hiep_14_btn1_check(object sender, KeyEventArgs e)
+        private void hiep_14_txt_check(object sender, KeyEventArgs e)
         {
-            //hiep_14_count all hiep_14_key press
             //time start here
             if (hiep_14_isStart)
             {
                 hiep_14_timer1.Start();
                 hiep_14_isStart = false;
             }
-            else if (e.KeyCode == Keys.Shift) { }
+            //hiep_14_count all hiep_14_key press
+            if (e.KeyCode == Keys.Shift) { }
             else if (e.KeyCode == Keys.Enter)
             {
                 hiep_14_p++;
@@ -99,22 +99,20 @@ namespace hiep_14_typing_speed.components
 
         private void hiep_14_timer1_Tick(object sender, EventArgs e)
         {
+            if (hiep_14_sec < 0)
             {
-                if (hiep_14_sec < 0)
-                {
-                    hiep_14_timer1.Stop();
-                    hiep_14_txt1.Enabled = false;
-                    //here
-                    hiep_14_cal();
-                    hiep_14_wpm = (this.hiep_14_count / 5);
-                    hiep_14_accuracy = (this.hiep_14_key.Length) * 100 / (this.hiep_14_count-hiep_14_word);
-                    hiep_14_lbRatio.Text = string.Format("WPM: {0:F1}\nAccuracy: {1:F2}%", this.hiep_14_wpm, this.hiep_14_accuracy);
-                }
-                else if (hiep_14_sec < 10)
-                    hiep_14_time.Text = "0:0" + hiep_14_sec--.ToString();
-                else
-                    hiep_14_time.Text = "0:" + hiep_14_sec--.ToString();
+                hiep_14_timer1.Stop();
+                hiep_14_txt1.Enabled = false;
+                //here
+                hiep_14_cal();
+                hiep_14_wpm = (this.hiep_14_count / 5);
+                hiep_14_accuracy = (this.hiep_14_key.Length) * 100 / (this.hiep_14_count-hiep_14_word);
+                hiep_14_lbRatio.Text = string.Format("WPM: {0:F1}\nAccuracy: {1:F2}%", this.hiep_14_wpm, this.hiep_14_accuracy);
             }
+            else if (hiep_14_sec < 10)
+                hiep_14_time.Text = "0:0" + hiep_14_sec--.ToString();
+            else
+                hiep_14_time.Text = "0:" + hiep_14_sec--.ToString();
         }
     }
 }

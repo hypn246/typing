@@ -43,7 +43,8 @@
             _14_hiep_uC11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             _14_hiep_uC11.BackgroundImage = (Image)resources.GetObject("_14_hiep_uC11.BackgroundImage");
             _14_hiep_uC11.BackgroundImageLayout = ImageLayout.Stretch;
-            _14_hiep_uC11.Location = new Point(496, 240);
+            _14_hiep_uC11.Location = new Point(444, 240);
+            _14_hiep_uC11.Margin = new Padding(5);
             _14_hiep_uC11.Name = "_14_hiep_uC11";
             _14_hiep_uC11.Size = new Size(249, 64);
             _14_hiep_uC11.TabIndex = 0;
@@ -53,7 +54,7 @@
             _14_hiep_uC21.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             _14_hiep_uC21.BackgroundImage = (Image)resources.GetObject("_14_hiep_uC21.BackgroundImage");
             _14_hiep_uC21.BackgroundImageLayout = ImageLayout.Stretch;
-            _14_hiep_uC21.Location = new Point(496, 327);
+            _14_hiep_uC21.Location = new Point(444, 338);
             _14_hiep_uC21.Name = "_14_hiep_uC21";
             _14_hiep_uC21.Size = new Size(197, 70);
             _14_hiep_uC21.TabIndex = 1;

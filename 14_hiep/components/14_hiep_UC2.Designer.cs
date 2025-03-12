@@ -130,7 +130,7 @@
             hiep_14_txt1.Size = new Size(805, 181);
             hiep_14_txt1.TabIndex = 18;
             hiep_14_txt1.Text = "";
-            hiep_14_txt1.KeyUp += hiep_14_btn1_check;
+            hiep_14_txt1.KeyUp += hiep_14_txt_check;
             // 
             // hiep_14_lb2
             // 
