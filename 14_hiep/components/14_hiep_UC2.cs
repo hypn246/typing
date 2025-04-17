@@ -38,9 +38,10 @@ namespace hiep_14_typing_speed.components
             hiep_14_timer1.Stop();
             hiep_14_time.Text = "1:00";
             hiep_14_lbRatio.Text = "";
+            this.ActiveControl = hiep_14_txt1;
         }
 
-        private void hiep_14_txt_check(object sender, KeyEventArgs e)
+        private void hiep_14_txt_check(object sender, KeyEventArgs hiep_14_e)
         {
             //time start here
             if (hiep_14_isStart)
@@ -48,9 +49,9 @@ namespace hiep_14_typing_speed.components
                 hiep_14_timer1.Start();
                 hiep_14_isStart = false;
             }
-            //hiep_14_count all hiep_14_key press
-            if (e.KeyCode == Keys.Shift) { }
-            else if (e.KeyCode == Keys.Enter)
+            //hiep_14_soKTND all hiep_14_chuoiDe press
+            if (hiep_14_e.KeyCode == Keys.Shift) { }
+            else if (hiep_14_e.KeyCode == Keys.Enter)
             {
                 hiep_14_p++;
                 if (hiep_14_p > 3){
@@ -64,13 +65,13 @@ namespace hiep_14_typing_speed.components
         }
         private void hiep_14_cal()
         {
-            string[] quest=hiep_14_lb1.Text.Split(' ');
-            string[] current=hiep_14_txt1.Text.Split(' ');
-            for(int i=0; i < current.Length; i++)
+            string[] hiep_14_quest=hiep_14_lb1.Text.Split(' ');
+            string[] hiep_14_current=hiep_14_txt1.Text.Split(' ');
+            for(int hiep_14_i=0; hiep_14_i < hiep_14_current.Length; hiep_14_i++)
             {
-                if (current[i].Equals(quest[i]))
+                if (hiep_14_current[hiep_14_i].Equals(hiep_14_quest[hiep_14_i]))
                 {
-                    this.hiep_14_key += current[i];
+                    this.hiep_14_key += hiep_14_current[hiep_14_i];
                     this.hiep_14_word++;
                 }
             }
@@ -90,11 +91,25 @@ namespace hiep_14_typing_speed.components
             hiep_14_key = "";
             hiep_14_wpm = 0;
             hiep_14_accuracy = 0;
+            this.ActiveControl = hiep_14_txt1;
         }
 
         private void hiep_14_btn2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            hiep_14_txt1.Text = "";
+            hiep_14_lbRatio.Text = "";
+            hiep_14_isStart = true;
+            hiep_14_time.Text = "1:00";
+            hiep_14_sec = 59;
+            hiep_14_txt1.Enabled = true;
+            hiep_14_timer1.Stop();
+            hiep_14_word = 0;
+            hiep_14_count = 0;
+            hiep_14_key = "";
+            hiep_14_wpm = 0;
+            hiep_14_accuracy = 0;
+            this.ActiveControl = hiep_14_txt1;
         }
 
         private void hiep_14_timer1_Tick(object sender, EventArgs e)

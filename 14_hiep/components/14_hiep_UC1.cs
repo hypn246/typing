@@ -42,11 +42,12 @@ namespace hiep_14.components
             hiep_14_lb1.Text = hiep_14_list[hiep_14_rdn.Next(0, hiep_14_list.Length)];
             hiep_14_time.Text = "1:00";
             hiep_14_lbRatio.Text = "";
+            this.ActiveControl = hiep_14_txt1;
         }
 
-        private void hiep_14_btn1_check(object sender, KeyEventArgs e)
+        private void hiep_14_btn1_check(object sender, KeyEventArgs hiep_14_e)
         {
-            //hiep_14_count all hiep_14_key press
+            //hiep_14_soKTND all hiep_14_chuoiDe press
             hiep_14_count++;
             //time start here
             if (hiep_14_isStart)
@@ -54,7 +55,7 @@ namespace hiep_14.components
                 hiep_14_timer1.Start();
                 hiep_14_isStart = false;
             }
-            if (e.KeyCode == Keys.Space)
+            if (hiep_14_e.KeyCode == Keys.Space)
             {
                 if (hiep_14_txt1.Text.Trim() == hiep_14_lb1.Text)
                 {
@@ -77,7 +78,7 @@ namespace hiep_14.components
             hiep_14_lbRatio.Text = "";
             hiep_14_isStart = true;
             hiep_14_time.Text = "1:00";
-            hiep_14_sec = 10;
+            hiep_14_sec = 59;
             hiep_14_txt1.Enabled = true;
             hiep_14_timer1.Stop();
             hiep_14_word = 0;
@@ -85,11 +86,25 @@ namespace hiep_14.components
             hiep_14_key = "";
             hiep_14_wpm = 0;
             hiep_14_accuracy = 0;
+            this.ActiveControl = hiep_14_txt1;
         }
 
         private void hiep_14_btn2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            hiep_14_txt1.Text = "";
+            hiep_14_lbRatio.Text = "";
+            hiep_14_isStart = true;
+            hiep_14_time.Text = "1:00";
+            hiep_14_sec = 59;
+            hiep_14_txt1.Enabled = true;
+            hiep_14_timer1.Stop();
+            hiep_14_word = 0;
+            hiep_14_count = 0;
+            hiep_14_key = "";
+            hiep_14_wpm = 0;
+            hiep_14_accuracy = 0;
+            this.ActiveControl = hiep_14_txt1;
         }
 
         private void hiep_14_timer1_Tick(object sender, EventArgs e)

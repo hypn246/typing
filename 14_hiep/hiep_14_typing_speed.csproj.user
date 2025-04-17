@@ -16,5 +16,8 @@
     <Compile Update="components\14_hiep_UC_setting.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="hiep_14_frm_test_174_chieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
